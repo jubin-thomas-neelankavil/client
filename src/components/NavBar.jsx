@@ -18,8 +18,8 @@ const NavBar = () => {
     <Header position="static">
       <Toolbar>
         <Tabs to={"/"}>Code for Assignment</Tabs>
-        <Tabs to={"/all"}>All Users</Tabs>
-        <Tabs to={"/add"}>Add User</Tabs>
+        <Tabs to={"/all"}>All </Tabs>
+        <Tabs to={"/add"}>Add </Tabs>
       </Toolbar>
     </Header>
   );

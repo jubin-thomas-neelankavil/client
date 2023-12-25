@@ -42,7 +42,7 @@ const EditUser = () => {
   const loadItemDetails = async (id) => {
     console.log(id,"jjjjj");
     try {
-      const response = await axios.get(`http://localhost:8000/items/${id}`);
+      const response = await axios.get(`https://mernjubinbackend.onrender.com/items/${id}`);
       setItem(response.data);
     } catch (error) {
       console.error("Error loading item details:", error);
@@ -56,7 +56,7 @@ const EditUser = () => {
 
   const editItemDetails = async () => {
     try {
-      await axios.put(`http://localhost:8000/items/${id}`, item);
+      await axios.put(`https://mernjubinbackend.onrender.com/items/${id}`, item);
       navigate("/all");
     } catch (error) {
       console.error("Error editing item details:", error);

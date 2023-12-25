@@ -42,7 +42,7 @@ const AddDetails = () => {
     const fetchStatesAndCountries = async () => {
       try {
         const DataResponse = await axios.get(
-          "https://localhost:8000/items"
+          "https://mernjubinbackend.onrender.com/items"
         );
         
       } catch (error) {
@@ -63,7 +63,7 @@ const AddDetails = () => {
 
   const addDetails = async () => {
     try {
-      const resp = await axios.post("http://localhost:8000/items", data);
+      const resp = await axios.post("https://mernjubinbackend.onrender.com/items", data);
       console.log("API Response:", resp.data);
       navigate("/all");
     } catch (error) {

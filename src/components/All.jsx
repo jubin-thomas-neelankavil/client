@@ -46,7 +46,7 @@ const AllData = () => {
 
   const getAllData = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/items`);
+      const response = await axios.get(`https://mernjubinbackend.onrender.com/items`);
       setData(response.data);
     } catch (error) {
       console.error("Error fetching user data:", error);
@@ -56,7 +56,7 @@ const AllData = () => {
   const deleteDataDetails = async (id) => {
     console.log(id);
     try {
-      await axios.delete(`http://localhost:8000/items/${id}`);
+      await axios.delete(`https://mernjubinbackend.onrender.com/items/${id}`);
       getAllData();
     } catch (error) {
       console.error("Error deleting item:", error);
